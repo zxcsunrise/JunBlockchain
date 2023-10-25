@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*сброс стилей*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #E3E3E3;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.__title {
+  margin: 80px 0;
+  color: #000;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.__title span {
+  color: #C60021;
+}
+
+.header .headerBlock .info-block {
+  display: flex;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .headerBlock .info-block .headerNav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+.header .headerBlock .info-block .headerNav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header .headerBlock .info-block .headerNav ul li a:hover {
+  position: relative;
+}
+.header .headerBlock .info-block .headerNav ul li a:hover::before {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #C60021;
+}
+
+.heroSection .heroBlock .info-block {
+  display: flex;
+  justify-content: space-between;
+}
+.heroSection .heroBlock .info-block .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 75px;
+}
+.heroSection .heroBlock .info-block .info .desc ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.heroSection .heroBlock .info-block .info .desc ul li {
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  color: #000;
+  font-weight: 700;
+}
+.heroSection .heroBlock .info-block .info .desc ul li:nth-child(1) {
+  width: 464px;
+}
+.heroSection .heroBlock .info-block .info .desc ul li span {
+  color: #C60021;
+}
+.heroSection .heroBlock .info-block .info .btn {
+  padding: 10px 32px;
+  border: 1px solid #C60021;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.heroSection .heroBlock .info-block .info .btn:hover {
+  background-color: #C60021;
+  border: 1px solid #fff;
+}
+.heroSection .heroBlock .info-block .info .btn:hover a {
+  color: #fff;
+}
+.heroSection .heroBlock .info-block .info .btn a {
+  text-decoration: none;
+  color: #C60021;
+  font-weight: 700;
+}
+.heroSection .heroBlock .info-block .info .text p {
+  color: #000;
+  font-size: 52px;
+  font-weight: 700;
+}
+.heroSection .heroBlock .info-block .info .text p span {
+  color: #C60021;
+}
+.heroSection .heroBlock .info-block .img img {
+  width: 780px;
+  height: 936px;
+}
+
+.advantagesSection .advantagesBlock .info-block {
+  margin-top: 260px;
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.advantagesSection .advantagesBlock .info-block .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.advantagesSection .advantagesBlock .info-block .card p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.advantagesSection .advantagesBlock .info-block .card p span {
+  color: #C60021;
+}
+
+.aboutUsSection .aboutUsBlock .info-block {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.aboutUsSection .aboutUsBlock .info-block .card {
+  display: flex;
+  width: 340px;
+  padding: 32px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border: 1px solid #C60021;
+  border-radius: 20px;
+}
+.aboutUsSection .aboutUsBlock .info-block .card .name {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+}
+.aboutUsSection .aboutUsBlock .info-block .card .job {
+  font-size: 24px;
+  font-weight: 700;
+}
+.aboutUsSection .aboutUsBlock .info-block .card .job span {
+  color: #C60021;
+}
+.aboutUsSection .aboutUsBlock .info-block .card .work {
+  font-size: 20px;
+  font-weight: 700;
+}
+.aboutUsSection .aboutUsBlock .info-block .card img {
+  border-radius: 100px;
+}
+.aboutUsSection .aboutUsBlock .info-block .history {
+  display: flex;
+  width: 604px;
+  height: 442px;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutUsSection .aboutUsBlock .info-block .history p {
+  color: #000;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.portfolioSection .portfolioBlock .swiper {
+  margin-top: 150px;
+}
+.portfolioSection .portfolioBlock .swiper .swiper-button-next,
+.portfolioSection .portfolioBlock .swiper .swiper-button-prev {
+  color: #000;
+}
+.portfolioSection .portfolioBlock .swiper .swiper-slide .card {
+  display: flex;
+  padding: 56px 108px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 100px;
+  border: 2px solid #C60021;
+}
+.portfolioSection .portfolioBlock .swiper .swiper-slide .card .desc {
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+}
+.portfolioSection .portfolioBlock .swiper .swiper-slide .card .title {
+  display: flex;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.contactsSection .contactsBlock .info-block {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.contactsSection .contactsBlock .info-block .feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 650px;
+  height: 700px;
+  padding: 20px;
+  align-items: center;
+  border-radius: 80px;
+  border: 1px solid var(--accent, #C60021);
+  box-shadow: 4px 8px 5px 0px #C60021;
+}
+.contactsSection .contactsBlock .info-block .feedback form .textarea {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+.contactsSection .contactsBlock .info-block .feedback form input {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(198, 0, 33, 0.5);
+  width: 100%;
+  background-color: transparent;
+}
+.contactsSection .contactsBlock .info-block .feedback form p {
+  text-align: center;
+  width: 400px;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.contactsSection .contactsBlock .info-block .feedback form p span {
+  color: #C60021;
+}
+.contactsSection .contactsBlock .info-block .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+}
+.contactsSection .contactsBlock .info-block .text a {
+  text-decoration: none;
+  color: #C60021;
+}
+.reviewsSection .reviewsBlock .swiper {
+  margin-top: 80px;
+}
+.reviewsSection .reviewsBlock .swiper .swiper-wrapper .swiper-slide .card {
+  display: flex;
+  width: 465px;
+  height: 600px;
+  padding: 32px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #C60021;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.reviewsSection .reviewsBlock .swiper .swiper-wrapper .swiper-slide .card .nickname {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.reviewsSection .reviewsBlock .swiper .swiper-wrapper .swiper-slide .card .title {
+  color: var(--accent, #C60021);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.reviewsSection .reviewsBlock .swiper .swiper-wrapper .swiper-slide .card .desc {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.questionsSection .questionsBlock .info-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px;
+  
+}
+.questionsSection .questionsBlock .info-block .card {
+  display: flex;
+width: 720px;
+height: 250px;
+padding: 20px;
+flex-direction: column;
+align-items: flex-start;
+gap: 14px;
+flex-shrink: 0;
+border-radius: 20px;
+border: 1px solid var(--accent, #C60021);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.questionsSection .questionsBlock .info-block .card .title {
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.questionsSection .questionsBlock .info-block .card .desc{
+  color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.footer {
+  margin-top: 20px;
+  background-color: #313131;
+  border-top: 2px solid var(--accent);
+  padding: 23px;
+}
+.footer .footerBlock .info-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footerBlock .info-block .copyright {
+  color: #929292;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer .footerBlock .info-block .socialMedia {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+/*# sourceMappingURL=style.css.map */
